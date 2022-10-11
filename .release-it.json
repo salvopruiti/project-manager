@@ -1,0 +1,19 @@
+{
+    "git": {
+        "requireCommits": true,
+        "requireCleanWorkingDir": false,
+        "commit": true
+    },
+    "npm": false,
+    "hooks": {
+        "after:bump": "npx auto-changelog -p"
+    },
+    "github":{
+        "release": false
+    },
+    "plugins": {
+        "@release-it/bumper": {
+            "out": "VERSION"
+        }
+    }
+}
